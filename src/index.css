@@ -1,0 +1,271 @@
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+  margin: 0;
+}
+
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding-bottom: 10px;
+}
+
+.whole {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+.App-light-mode {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  box-sizing: border-box;
+  background-image: url(/src/sunny.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App-dark-mode {
+  background-color: rgb(46, 45, 45);
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  box-sizing: border-box;
+  background-image: url(/src/clouds-night-sky.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App-dark-mode .title-app {
+  background-color: black;
+  width: min(450px, 100%);
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 16px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgb(164, 5, 250);
+  gap: 20px;
+}
+
+.App-light-mode .title-app {
+  width: min(450px, 100%);
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgb(164, 5, 250);
+  gap: 20px;
+}
+
+.img-world {
+  width: 10%;
+  height: 10%;
+}
+
+.App-dark-mode .main-content {
+  background-color: black;
+  color: white;
+  display: grid;
+  box-sizing: border-box;
+  width: min(450px, 100%);
+  min-height: fit-content;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+  border-radius: 20px;
+  border: 5px solid rgb(164, 5, 250);
+  padding: 0;
+}
+
+.photo-weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(98, 98, 98);
+  border-radius: 50%;
+}
+
+.App-light-mode .main-content {
+  display: grid;
+  box-sizing: border-box;
+  width: min(450px, 100%);
+  min-height: fit-content;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+  border-radius: 20px;
+  border: 5px solid rgb(164, 5, 250);
+  padding: 0;
+}
+
+.App-dark-mode .main-content img {
+  width: 150%;
+  height: 70%;
+}
+
+.App-light-mode .main-content img {
+  width: 150%;
+  height: 70%;
+}
+
+.temperature-add {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: min(310px, 100%);
+}
+
+.temperature-add img {
+  width: 50%;
+  height: 50%;
+}
+
+.temperature-add div {
+  text-align: center;
+  background-color: rgb(164, 5, 250);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 0.25;
+  font-size: 17px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 600px;
+  padding: 40px;
+  z-index: 1;
+  gap: 50px;
+}
+
+.card button {
+  background-color: rgb(226, 189, 43);
+  border-radius: 30px;
+  padding: 15px;
+  border: 2px solid black;
+}
+
+.card img {
+  width: fit-content;
+  height: fit-content;
+}
+
+.disapear {
+  display: none;
+}
+
+.cardX {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 600px;
+  padding: 40px;
+  z-index: 1;
+  gap: 50px;
+}
+
+.Loading-card {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  box-sizing: border-box;
+  background-image: url(/src/giphy.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Loading-card h3{
+  width: 310px;
+  height: 80px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #fa77ef;
+  background-color: aliceblue;
+  border-radius: 6px;
+  border: #f325e2 solid 3px;
+}
+.temperatura-and-more{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: min(150px, 100%);
+}
+
+.temperature-add .temperatura-and-more .div-btn-temp{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  width: min(100px, 100%);
+}
+.temperature-add .temperatura-and-more .div-btn-temp button{
+    width: min(30px, 100%);
+    padding: 5px;
+    border-radius: 6px;
+    background-color: #f325e2;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #435463;
+    color: #35424e;
+}
+
+.temperature-add .temperatura-and-more .div-btn-temp button:hover{
+  
+  padding: 5px;
+  border-radius: 6px;
+  background-color: #fa77ef;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #435463;
+  color: #35424e;
+  transform: scale(1.07);
+  transition: 250ms;
+}
